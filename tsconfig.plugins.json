@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "module": "NodeNext",
+    "skipLibCheck": true
+  },
+  "include": [
+    "prompt_engineering_plugin.ts",
+    "project_simulator_plugin.ts",
+    "plugin_interface.ts"
+  ]
+}
