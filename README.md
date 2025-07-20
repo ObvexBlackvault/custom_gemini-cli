@@ -1,6 +1,8 @@
 # Gemini CLI
 
-[![Gemini CLI CI](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml)
+[![CI](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml)
+[![Lint](https://github.com/google-gemini/gemini-cli/actions/workflows/lint.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/lint.yml)
+[![Test](https://github.com/google-gemini/gemini-cli/actions/workflows/test.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/test.yml)
 
 ![Gemini CLI Screenshot](./docs/assets/gemini-screenshot.png)
 
@@ -18,6 +20,64 @@
 
 ---
 
+## Installation
+
+### Prerequisites
+
+- [Node.js v20+](https://nodejs.org/en/download)
+- Works on macOS, Linux, Windows
+
+### Run Directly (No Install)
+
+```bash
+npx https://github.com/google-gemini/gemini-cli
+```
+
+### Install from NPM
+
+```bash
+npm install -g @gemini/cli
+```
+
+### Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/google-gemini/gemini-cli.git
+   ```
+2. Install dependencies:
+   ```bash
+   cd gemini-cli
+   npm install
+   ```
+3. Run the CLI:
+   ```bash
+   npm start
+   ```
+
+---
+
+## Demo Commands
+
+Here are a few examples of what you can do with Gemini CLI:
+
+*   **Ask a question about your code:**
+    ```bash
+    gemini "what is the purpose of the `project_simulator_plugin.ts` file?"
+    ```
+
+*   **Generate a new file:**
+    ```bash
+    gemini "create a new file named 'test.txt' with the content 'hello world'"
+    ```
+
+*   **Summarize a file:**
+    ```bash
+    gemini "summarize the `README.md` file"
+    ```
+
+---
+
 ## Project Structure
 
 - `packages/cli/` — CLI source code
@@ -28,19 +88,3 @@
 - `scripts/` — Build and automation scripts
 - `docs/` — Documentation and guides
 - `integration-tests/`, `tests/` — Example, regression, and integration tests
-
----
-
-## Quickstart
-
-### 1. Prerequisites
-
-- [Node.js v20+](https://nodejs.org/en/download)
-- Works on macOS, Linux, Windows
-
-### 2. Installation
-
-#### Run Directly (No Install)
-
-```bash
-npx https://github.com/google-gemini/gemini-cli
